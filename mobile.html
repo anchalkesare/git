@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppo Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('pic1.jpg'); /* Replace 'background_image.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-color: transparent;
+        }
+        header {
+            background-color: green;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            color: black;
+            display: inline;
+            margin: 0 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color:transparent;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: cover;
+            bottom: 0;
+            width: 100%;
+        }
+        .product {
+            background-color:transparent;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Oppo Products</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#Smartphones">Smartphones</a></li>
+            <li><a href="#Tablets">Tablets</a></li>
+            <li><a href="#Earphones">Earphones</a></li>
+            <li><a href="#Accessories">Accessories</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="Smartphones" class="product">
+        <h2>Smartphones</h2>
+        
+        <div class="product-item">
+            <img src="oppo_findx.jpg" alt="Oppo Find X">
+            <h3>Oppo Find X</h3>
+            <p>Price: $999</p>
+            <p>The Oppo Find X is a flagship smartphone with a stunning design and innovative features.</p>
+        </div>
+        
+        <div class="product-item">
+            <img src="oppo_reno.jpg" alt="Oppo Reno">
+            <h3>Oppo Reno</h3>
+            <p>Price: $699</p>
+            <p>The Oppo Reno series offers sleek designs and powerful performance.</p>
+        </div>
+    
+        <!-- Add more product items as needed -->
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Oppo Products</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        $('nav a').on('click', function(e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+            }
+        });
+    </script>
+</body>
+</html>
